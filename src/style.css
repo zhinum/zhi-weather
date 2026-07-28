@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+#location-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#weatherDisplay {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 400px;
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: black;
+  color: beige;
+}
+
+#conditons,
+#temparature {
+  font-size: larger;
+  font-weight: bold;
+}

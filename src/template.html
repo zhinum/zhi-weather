@@ -6,8 +6,17 @@
     <title>STARTER</title>
   </head>
   <body>
-    <label for="location">What is your current location?</label>
-    <input type="text" id="location" placeholder="enter your location" />
-    <button type="submit" id="locationBtn">Get Weather</button>
+    <main id="page-container">
+      <section id="location-form">
+        <label for="location">What is your current location?</label>
+        <input type="text" id="location" placeholder="enter your location" />
+        <button type="submit" id="locationBtn">Get Weather</button>
+      </section>
+
+      <section id="weatherDisplay">
+        <div id="condition"></div>
+        <div id="temparature"></div>
+      </section>
+    </main>
   </body>
 </html>
