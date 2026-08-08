@@ -17,7 +17,8 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
-#weatherDisplay {
+#weatherDisplay,
+#result {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -26,7 +27,7 @@ body {
   width: 100%;
   max-width: 400px;
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
   gap: 1rem;
   background-color: aliceblue;
@@ -37,4 +38,8 @@ body {
 #temparature {
   font-size: larger;
   font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
 }
