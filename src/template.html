@@ -7,11 +7,16 @@
   </head>
   <body>
     <main id="page-container">
-      <section id="location-form">
+      <form id="location-form">
         <label for="location">What is your current location?</label>
-        <input type="text" id="location" placeholder="enter your location" />
+        <input
+          type="text"
+          id="location"
+          placeholder="enter your location"
+          required
+        />
         <button type="submit" id="locationBtn">Get Weather</button>
-      </section>
+      </form>
 
       <section id="weatherDisplay">
         <div id="condition"></div>

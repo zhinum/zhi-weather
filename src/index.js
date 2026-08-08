@@ -3,12 +3,13 @@ import { locationFetch } from "./locationFetch.js";
 import { Uicontrol } from "./uiControl.js";
 
 const location = document.getElementById("location");
-const locationBtn = document.getElementById("locationBtn");
+const locationForm = document.getElementById("location-form");
 
 const weather = new locationFetch();
 const uiController = new Uicontrol();
 
-locationBtn.addEventListener("click", async () => {
+locationForm.addEventListener("click", async (e) => {
+  e.preventDefault();
   const userLocation = location.value;
   if (!userLocation) return;
 

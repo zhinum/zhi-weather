@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: lightblue;
 }
 #page-container {
   display: flex;
@@ -28,8 +29,8 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   gap: 1rem;
-  background-color: black;
-  color: beige;
+  background-color: aliceblue;
+  color: rgb(55, 52, 52);
 }
 
 #conditons,
