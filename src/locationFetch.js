@@ -1,15 +1,12 @@
 export class locationFetch {
-  async fetchWeather(userLocation, displayMessage) {
+  async fetchWeather(userLocation) {
     const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${userLocation}?key=UG4RFWYRU892D4U4TA9NW58WR`;
 
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`Invalid request error ${response.status}`);
-      }
-      return await response.json();
-    } catch (error) {
-      displayMessage.textContent = error.message;
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Invalid location,
+          Try again`);
     }
+    return await response.json();
   }
 }
